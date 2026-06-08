@@ -1,0 +1,72 @@
+# Lead Briefing – Wesley van de Camp
+
+## Metadata
+
+* **Lead name:** Wesley van de Camp
+* **Company:** TBD — confirm on call (organization using manual operations)
+* **Role / title:** TBD
+* **Email / phone:** [wesleyvandecamp@outlook.com](mailto:wesleyvandecamp@outlook.com)
+* **Source / channel:** Outbound from AI Whisperers (Kiki); topic AI agents for operations
+* **Briefing owner:** TBD
+* **Last updated:** 2026-06-08
+
+## Call logistics
+
+* **Scheduled:** **09:00 Paraguay (UTC−4)** / **15:00 Netherlands (CEST)** — Wesley confirmed this pairing works
+* **Meeting link / dial-in:** TBD — send calendar invite
+* **Attendees (us):** Kiki, Ivan (expected)
+* **Attendees (them):** Wesley van de Camp
+
+## Offer recap
+
+* Free ~15-minute discovery conversation
+* After the call: **tailored proposal within 24 hours** (per prior outreach commitment)
+
+## Context so far
+
+* Kiki (AI Whisperers) reached out about AI agents to reduce operational workload; offered 15-minute discovery and follow-up proposal.
+* Wesley responded positively; open to collaboration and a possible **in-person** follow-up when visiting Paraguay.
+* Scheduling moved from initial options (Mon 15:30/16:00 PY, Tue 09:00 PY) to **next week** or **tomorrow 09:00 PY**; final confirmation on **09:00 PY / 15:00 NL**.
+
+## 15-minute discovery agenda (prioritized)
+
+1. **Operations today:** where does manual work hurt most (volume, errors, latency, cost)?
+2. **Systems map:** core tools (email, chat, spreadsheets, line-of-business apps, any existing automation).
+3. **One “first win”:** single workflow they would trust an agent to assist first (read-heavy vs write-heavy).
+4. **Data & access:** what can be shared with a vendor; any compliance or residency constraints (EU operations implied by Netherlands time).
+5. **Decision process:** who signs; budget **band** or “project vs retainer” preference — only capture what they actually state.
+6. **Timeline:** pilot vs production pressure; travel to Paraguay as a separate relationship milestone.
+
+## Pitch angle
+
+Position **practical operational agents** (assistants that reduce repetitive work) with a clear **measure** (hours saved, throughput, error reduction)—not generic “AI for AI’s sake.” Offer a **short path to a first scoped pilot** after the written proposal, with optional deeper engagement if the first win lands.
+
+* Emphasize **human-in-the-loop** where decisions or customer-facing quality matter.
+* Tie to **LATAM delivery** and local presence if relevant to trust and timezone coverage.
+* Commit only to **discovery + written proposal** on this call unless pre-approved.
+
+## Pricing & packaging notes
+
+* **Signals heard:** None on budget yet — warm exploratory tone.
+* **Hypothesis:** Start with **discovery + scoped proposal**; possible **pilot SOW** if pain is narrow (e.g. one process). Formalize after operational map exists.
+* **Unknowns for this call:** Company size, stack, security requirements, budget owner, desired start date.
+* **Do not quote on the call without:** Internal sign-off on scope and rate card for anything beyond the promised written proposal.
+
+## Risks, compliance, guardrails
+
+* Avoid promising **fully autonomous** customer-facing actions until channels and policies are known.
+* If **EU personal data** appears in scope, note GDPR-aligned handling in the proposal phase.
+
+## Next steps
+
+1. Send **calendar invitation** reflecting **09:00 PY / 15:00 NL**.
+2. Run the **15-minute discovery** using the agenda above; take notes into this file (or dated subsection).
+3. Deliver **tailored proposal within 24 hours** of the call end.
+4. If mutual fit: tee up **in-person** discussion around Wesley’s Paraguay travel (no dates committed here).
+
+## Overall assessment
+
+* **Fit:** **Medium–high** — warm, responsive, concrete interest in operational efficiency; needs stack/pain detail to confirm.
+* **Urgency:** Moderate — flexible on week; engaged enough to iterate on times.
+* **Red flags:** None noted; scope still wide—manage through phased proposal.
+* **Recommended deal shape:** **Discovery → 24h proposal → optional pilot** scoped to one operational workflow.

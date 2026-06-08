@@ -1,0 +1,78 @@
+# Lead Briefing – Bichos Gym
+
+## Metadata
+
+* **Lead name:** TBD — confirm decision maker on call
+* **Company:** Bichos Gym (fitness — Paraguay SMB pipeline)
+* **Role / title:** TBD
+* **Email / phone:** TBD
+* **Source / channel:** Internal org pipeline (Paraguay wellness/fitness lead-gen / site initiative)
+* **Briefing owner:** TBD
+* **Last updated:** 2026-06-08
+
+## Call logistics
+
+* **Scheduled:** TBD — **Paraguay (UTC−4)** vs AI Whisperers attendee zones
+* **Meeting link / dial-in:** TBD
+* **Attendees (us):** TBD
+* **Attendees (them):** TBD
+
+## Offer recap
+
+* Free ~15-minute discovery call
+* Post-call: tailored proposal within agreed SLA (TBD)
+
+## Context so far
+
+* How contact started: TBD
+* Lead tone (cold / warm / referral): TBD
+* Anything already promised: Unknown — ask on call
+
+## 15-minute discovery agenda (prioritized)
+
+1. **Membership & payments:** how sign-ups, renewals, and delinquencies are tracked
+2. **Class / trainer schedule:** bottlenecks and no-shows
+3. **Lead capture:** walk-ins, Instagram, referrals — where leads leak
+4. **Retention:** churn reasons they already know anecdotally
+5. **Stack:** gym software, spreadsheets, WhatsApp groups
+6. **Owner goal:** revenue vs time vs member experience — rank
+
+## Pitch angle
+
+* Gyms care about **retention and predictable ops**. AI Whisperers can frame **assistants for admin and member comms** (renewal nudges, FAQ, schedule changes) with strict boundaries—no “AI trainer” overclaim.
+* Proof points:
+
+  * Operational agents tied to their real tools (not generic chat)
+  * Bilingual Spanish messaging patterns
+  * Measurable pilot (e.g. renewal reminders + response tracking)
+
+## Pricing & packaging notes
+
+* **Signals heard:** Unknown — ask on call
+* **Hypothesis:** Retainer-light **automation sprint** or membership-comms pilot
+* **Unknowns:** Current gym management platform, payment processor, franchise rules
+* **Do not quote on the call without:** Integration access model and who owns member data
+
+## Risks, compliance, guardrails
+
+* Member PII and minors — handle carefully; no bulk cold outreach without consent review
+* Payment/renewal messaging may be regulated or sensitive — align copy with owner
+
+## Next steps
+
+1. Book discovery
+2. Pre-call channel scan for tone and offers
+3. Proposal SLA after call
+
+## Overall assessment
+
+* **Fit:** TBD
+* **Urgency:** TBD
+* **Red flags:** TBD
+* **Recommended deal shape:** Pilot on renewal/lead follow-up → broader ops if ROI clear
+
+---
+
+## Annex (optional — deep notes, use cases, research)
+
+* Add CRM or internal repo links here.

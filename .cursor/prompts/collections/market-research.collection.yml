@@ -1,0 +1,12 @@
+id: market-research-workflows-bundle
+name: "Market research / deepsearch"
+description: "Prompts for evidence-first market research and structured delivery packs"
+tags:
+  - market-research
+  - deepsearch
+  - intelligence
+version: 1.0.0
+owner: team-prompts
+items:
+  - path: market-research/run-deepsearch-pack.prompt.md
+    kind: prompt

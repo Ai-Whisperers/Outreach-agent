@@ -1,0 +1,90 @@
+---
+id: rule.market-research.overview.v1
+kind: rule
+version: 1.0.0
+description: Navigation hub and overview for the market research / deepsearch engine rule framework
+globs: **/.cursor/rules/market-research/**/*.mdc, **/docs/market-research/**/*.md
+governs: ""
+implements: market-research.overview
+requires:
+  - rule.market-research.deepsearch.contract.v1
+  - rule.market-research.deepsearch.delivery.v1
+model_hints: { temp: 0.2, top_p: 0.9 }
+provenance: { owner: team-market-research, last_review: 2026-06-02 }
+alwaysApply: false
+---
+
+# Market Research Engine — Rules Index
+
+## Purpose & Scope
+
+This index anchors the **market research / deepsearch** domain: wide discovery on a subject (brand, product, service, or niche), evidence-first synthesis, and a **delivery pipeline** that ranks by recency and relevance, maps economics and key actors, and supports **outreach intelligence** (including social patterns) for strategic improvement—not for impersonation or deceptive copying.
+
+**Applies to**: Implementing or evolving the engine, authoring prompts/specs under `docs/market-research/`, and agent work tagged to this domain.
+
+**Does not apply to**: Unrelated product areas, or activities that violate platform terms, privacy law, or ethical research norms.
+
+## Rules Manifest
+
+| ID | File | Role |
+|----|------|------|
+| `rule.market-research.overview.v1` | `market-research-rules-index.mdc` | Hub (this file) |
+| `rule.market-research.agent-application.v1` | `market-research-agent-application-rule.mdc` | When/how agents load domain rules |
+| `rule.market-research.deepsearch.contract.v1` | `deepsearch-engine-contract-rule.mdc` | Subject scope, discovery, evidence |
+| `rule.market-research.deepsearch.delivery.v1` | `deepsearch-delivery-and-intelligence-rule.mdc` | Filters, economics, people, social intel |
+
+## Templars manifest
+
+| ID | File | Role |
+|----|------|------|
+| `templar.market-research.deepsearch-research-run.v1` | `.cursor/templars/market-research/deepsearch-research-run-templar.md` | Internal JSON-shaped research run + evidence |
+| `templar.market-research.deepsearch-pack.v1` | `.cursor/templars/market-research/deepsearch-pack-templar.md` | User-facing delivery pack (Markdown) |
+
+## Dependency Graph
+
+```
+rule.market-research.agent-application.v1
+  |--- requires: rule.market-research.deepsearch.contract.v1
+  `--- requires: rule.market-research.deepsearch.delivery.v1
+
+rule.market-research.overview.v1
+  |--- requires: rule.market-research.deepsearch.contract.v1
+  `--- requires: rule.market-research.deepsearch.delivery.v1
+
+rule.market-research.deepsearch.contract.v1
+  |--- requires: rule.general.verify-info.v1
+  `--- requires: templar.market-research.deepsearch-research-run.v1
+
+rule.market-research.deepsearch.delivery.v1
+  |--- requires: rule.market-research.deepsearch.contract.v1
+  |--- requires: rule.general.verify-info.v1
+  `--- requires: templar.market-research.deepsearch-pack.v1
+```
+
+## Product Philosophy (Shared)
+
+1. **Evidence over narrative**: Claims trace to sources; unknowns are labeled.
+2. **Decision-linked relevance**: Everything in the final pack ties to the user’s stated goal.
+3. **Recency-aware**: Prefer the freshest *authoritative* signal, with domain-appropriate windows.
+4. **Strategic social intel**: Study patterns (format, cadence, positioning)—not counterfeit voices.
+
+## Reading Paths
+
+- **Implementing ranking/filters or reports**: `rule.market-research.deepsearch.delivery.v1`
+- **Implementing crawl/search breadth or subject handling**: `rule.market-research.deepsearch.contract.v1`
+- **Choosing which rule applies**: `rule.market-research.agent-application.v1`
+- **Prompt pack**: `.cursor/prompts/market-research/run-deepsearch-pack.prompt.md` — collection `market-research.collection.yml`
+- **Future rule gaps**: `docs/market-research/FUTURE-RULES-GAPS.md`
+
+## Related Rules
+
+- `rule.general.verify-info.v1` — No factual claims without support from context, files, or retrieved evidence
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Hub lists all market-research rule IDs and files
+- [ ] Hub lists templar IDs used by contract and delivery rules
+- [ ] Philosophy aligns with contract and delivery rules (no contradiction)
+- [ ] Reading paths point to correct rule IDs
+- [ ] `governs` remains empty (index does not mutate files)
+- [ ] Cross-references use stable IDs only

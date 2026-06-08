@@ -1,0 +1,71 @@
+---
+id: rule.campaigns.paraguai-brand-visual.v1
+kind: rule
+version: 1.0.0
+description: Enforces official ParaguAI logo, name, and colors on all ParaguAI campaign assets and AI-generated images
+globs:
+  - "AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/**"
+  - "**/Campaigns/ParaguAI/**"
+implements: campaigns.paraguai.brand
+requires: []
+provenance:
+  owner: marketing
+  last_review: 2026-05-19
+alwaysApply: false
+---
+
+# ParaguAI Brand Visual Rule
+
+## Purpose
+
+Any social image, carousel, ad creative, or AI-generated graphic for **ParaguAI** must use the **official** name and logo from [paragu-ai.com](https://paragu-ai.com/), not approximations.
+
+## Mandatory reference
+
+Before generating or approving ParaguAI visuals, read:
+
+`AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/PARAGUAI-BRAND-GUIDE.md`
+
+Use local logo file:
+
+`AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/paraguai-logo.png`
+
+When using image generation tools, pass `paraguai-logo.png` as a **reference image** whenever the tool supports it.
+
+## Name (non-negotiable)
+
+- **ParaguAI** — single word, capital P, capital AI in wordmark styling.
+- Product line name on corporate pieces: **ParaguAI Builder**.
+- URL: **paragu-ai.com** (lowercase, hyphen).
+
+Never: Paragu AI, ParaguayAI, PARAGU AI, or generic "AI company" logos.
+
+## Logo (non-negotiable)
+
+- **Icon:** square, diagonal split, purple-pink gradient (top-left), dark navy (bottom-right), white **AI**.
+- **Wordmark:** navy pill, white **Paragu**, lavender **AI**.
+- Do not substitute a different icon, recolor the gradient, or use stock "AI brain" clipart.
+
+## Workflow for new images
+
+1. **Document first:** create or update `verticals/{slug}/image-prompt-es.md` (or `brand/image-prompts/PROMPT-*.md` for global assets). Complete the pre-generation checklist in that file.
+2. Load `paraguai-logo.png` as reference.
+3. Apply rubro-specific **content** colors only outside the logo lockup.
+4. Place official logo + `paragu-ai.com` on every published square/landscape creative.
+5. If generated output drifts from the reference, **composite the official PNG** in Figma/Canva instead of accepting the drift.
+
+## Copy alignment
+
+Social prompts and posts under `Campaigns/ParaguAI/` must link to the correct demo URL per vertical (e.g. `gymfit-py`, `salon-maria`) when promoting a template.
+
+## Outputs
+
+- **Per vertical:** `Campaigns/ParaguAI/verticals/{slug}/social-1080.png` after `image-prompt-es.md` is approved.
+- **Global campaign pieces:** `Campaigns/ParaguAI/assets/` only with a matching approved prompt in `brand/image-prompts/` (e.g. `PROMPT-{name}-es.md`).
+- Document which prompt file was used in the post markdown or vertical README.
+
+## Anti-patterns
+
+- Inventing a new "ParaguAI" logotype per post.
+- English-only brand name on Spanish PY audience posts (name stays **ParaguAI**; copy can be Spanish).
+- Publishing without the logo because "the layout was cleaner".

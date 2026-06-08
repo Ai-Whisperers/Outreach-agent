@@ -1,0 +1,98 @@
+---
+id: rule.outreach.lead-briefing.standard.v1
+kind: rule
+version: 1.0.0
+description: Standard structure and quality bar for Lead Briefing files used before the free 15-minute discovery call—pitching, pricing signals, and post-call proposal prep.
+globs: Leads/**/*.txt, Leads/**/*.md
+governs: Leads/**/*.txt, Leads/**/*.md
+implements: outreach.lead-briefing.standard
+requires: []
+model_hints: { temp: 0.2, top_p: 0.9 }
+provenance: { owner: outreach-agent, last_review: 2026-06-08 }
+alwaysApply: false
+---
+
+# Lead briefing standard (15-minute discovery)
+
+## Purpose & Scope
+
+Lead briefings in `Leads/` are the **primary prep artifact** for the **first free ~15-minute call** with a prospect. They align the team on **pitch angle**, **commercial and pricing signals**, **discovery questions**, and **next steps** (including the **post-call proposal** window). Consistent structure reduces missed signals and weak quotes.
+
+**Applies to**: New or updated files matching `Lead Briefing*` or pre-discovery lead prep under `Leads/`.
+
+**Does not apply to**: Post-sale SOWs, long-form technical specs, or CRM exports (link from briefing instead).
+
+## Inputs (Contract)
+
+- Verified facts from conversations, email, CRM, or calendar (no invented budget or timeline).
+- Lead name, company (if any), role, channel/source, and scheduled call time with **time zone for both sides**.
+
+## Outputs (Contract)
+
+- One briefing file per active lead conversation, named: `Lead Briefing – {Name or Company}.txt` (or `.md`).
+- Contains the **required sections** listed under Formatting Requirements (use `TBD` or `Unknown — ask on call` when data is missing; do not fabricate).
+- Optional **Annex** for deep research (use cases, long checklists) after a `---` separator so the discovery cover stays scannable.
+
+## Deterministic Steps
+
+1. Copy `Leads/_TEMPLATE – Lead Briefing (15-min discovery).txt` when starting a new lead file.
+2. Fill **Metadata** and **Call logistics** first (timezone, attendees, offer recap).
+3. Write **15-minute discovery agenda** as **5–8 bullets max** (what you must learn to price).
+4. Add **Pitch angle** (one paragraph + 3 bullets tying AI Whisperers to their stated pain).
+5. Add **Pricing & packaging notes**: hypothesis tier, signals heard, **explicit unknowns** for the call.
+6. Capture **Risks / compliance** (e.g. LinkedIn automation, EU data) when relevant.
+7. **Next steps** must include post-call deliverable (e.g. proposal within 24h) if that is your process.
+8. After the call: update the same file (or add dated subsection) with what was confirmed—keeps one source of truth.
+
+## Formatting Requirements
+
+Required H2 sections (in order) for the **discovery cover**:
+
+1. `## Metadata` — lead, company, role, email/phone, source, briefing owner, last updated date.
+2. `## Call logistics` — scheduled time with **both time zones**, meeting link, attendees (names + roles).
+3. `## Offer recap` — what was promised for this call (e.g. free 15 min, what happens after).
+4. `## Context so far` — how the lead entered; tone; prior commitments.
+5. `## 15-minute discovery agenda` — prioritized questions (commercial + technical + decision process).
+6. `## Pitch angle` — positioning for *this* lead (not generic marketing).
+7. `## Pricing & packaging notes` — budget/timeline/payment signals; packaging hypothesis; **no invented numbers**.
+8. `## Risks, compliance, guardrails` — platform ToS, data residency, “do not commit on the call” items.
+9. `## Next steps` — calendar, follow-ups, who sends proposal, SLA.
+10. `## Overall assessment` — fit, urgency, red flags, recommended deal shape.
+
+Deep material (Mark-style use-case lists) lives under `## Annex` (optional) after `---`.
+
+## OPSEC and Leak Control
+
+- Treat briefings as **internal**: avoid pasting full briefings into public issues or chats.
+- Do not store secrets (API keys, passwords); reference vault or password manager locations obliquely if needed.
+
+## Integration Points
+
+- Template: `Leads/_TEMPLATE – Lead Briefing (15-min discovery).txt` (stays at `Leads/` root; copy before saving under a track folder).
+- Saved briefings: `Leads/Briefings/<track>/` (e.g. `Europe/`, `Paraguay-pipeline/`); see `Leads/Briefings/README.md`.
+- Language: internal briefing narrative in **English**; verbatim client quotes may stay in source language — `rule.outreach.language-locale.v1`.
+- For market sizing pulled into a briefing, follow `rule.market-research.agent-application.v1` and cite sources inside the annex.
+
+## Failure Modes and Recovery
+
+- **Wall of text**: Move detail to Annex; keep discovery sections under ~2 screens.
+- **Missing commercial block**: Restoring `## Pricing & packaging notes` is mandatory before the call.
+- **Conflicting time zones**: Fix in `## Call logistics` and confirm in writing before the call.
+
+## Provenance Footer Specification
+
+Optional one-line footer on update: `Briefing-updated: YYYY-MM-DD by {name}`.
+
+## Related Rules
+
+- `rule.market-research.agent-application.v1` — when annex includes external research
+- `rule.general.verify-info.v1` — no factual claims without evidence
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] All required H2 sections present or explicitly marked TBD with a discovery question to fill them
+- [ ] Time zones and attendees stated in **Call logistics**
+- [ ] **15-minute discovery agenda** is short and prioritized (not a full workshop plan)
+- [ ] **Pricing & packaging notes** contains signals + unknowns—no fabricated budget
+- [ ] Risks / no-commit items listed when automation, messaging, or regulated data is involved
+- [ ] Next steps include post-call deliverable owner and timing when applicable

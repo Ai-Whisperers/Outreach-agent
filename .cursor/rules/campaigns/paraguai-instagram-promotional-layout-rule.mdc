@@ -1,0 +1,70 @@
+---
+id: rule.campaigns.paraguai-instagram-promotional-layout.v1
+kind: rule
+version: 1.0.0
+description: Layout estándar para posts promocionales Instagram (feed/carrusel) alineado a prácticas 2025-2026 y pipeline ParaguAI
+globs:
+  - "AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/**"
+  - "**/Campaigns/ParaguAI/**"
+implements: campaigns.paraguai.instagram.layout
+requires:
+  - rule.campaigns.paraguai-brand-visual.v1
+  - rule.campaigns.paraguai-copy-language.v1
+provenance:
+  owner: marketing
+  last_review: 2026-05-20
+alwaysApply: false
+---
+
+# ParaguAI — Layout promocional Instagram (feed / carrusel)
+
+## Fuente normativa (humana)
+
+Antes de diseñar, exportar o generar con IA **cualquier pieza promocional de feed** (estática o carrusel), leé y respetá:
+
+`AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/INSTAGRAM-STANDARDS-es.md` — sección **«Layout promocional (feed y carrusel)»**.
+
+Esta regla resume obligaciones para el **agente**; el markdown del hub es la referencia extendida.
+
+## Principios (obligatorios)
+
+1. **Una idea por slide** (carrusel). Nada de párrafos largos: titular dominante + apoyo breve + (opcional) viñetas o imagen.
+2. **Jerarquía fija:** titular (mayor contraste) → elemento visual (foto, mockup, icono, columna derecha) → cuerpo / bullets → marca (logo + URL) en cierre o pie consistente.
+3. **Contraste y legibilidad:** texto principal ≥ objetivo 4.5:1 cuando sea posible; cuerpo mínimo equivalente a **~18–20 px** en canvas de **1080 px** de ancho; titular **2.3×–3×** el cuerpo.
+4. **Márgenes:** mínimo **48 px** al borde del lienzo para logo y elementos críticos (guía ParaguAI); dejá **aire** entre titular, bloque de copy y CTA para que no se solapen al exportar o al comprimir IG.
+5. **Marca:** lockup oficial y `paragu-ai.com` según `paraguai-brand-visual` y `PARAGUAI-BRAND-GUIDE.md`; no comprimir el logo por debajo del tamaño mínimo usable en thumb.
+6. **Copy:** regla `paraguai-copy-language` (sin “Google”, etc.).
+
+## Formatos (elección consciente)
+
+| Prioridad | Ratio | px | Uso |
+|-----------|-------|-----|-----|
+| **Preferido (feed / carrusel, incl. planes ParaguAI)** | **4:5** | **1080×1350** | Más altura en feed; mismo ratio en **todas** las slides. Script: `build_carousel_planes_png.py`. |
+| **Legacy verticales por rubro** | 1:1 | 1080×1080 | `vertical-<slug>-social-1080.png` hasta migración por brief. |
+| Reels / Stories | 9:16 | 1080×1920 | No texto crítico en zona baja reservada a UI (ver estándares). |
+
+**Carrusel:** la **primera slide fija el ratio** para todo el post; no mezclar 1:1 con 4:5 en el mismo carrusel.
+
+## Patrón de slides (promo / producto tipo B2B tech)
+
+Alineado a patrones de alto rendimiento en carruseles educativos y de producto (p. ej. cuentas de IA / SaaS con slides oscuras y titular único):
+
+| Slide | Rol |
+|-------|-----|
+| 1 | **Hook:** promesa o dolor en pocas palabras; puede incluir pista visual “hay más al deslizar”. |
+| 2 … N−1 | **Cuerpo:** un beneficio, un plan, un paso o una prueba por slide; listas cortas con viñetas. |
+| N | **Cierre:** CTA único + logo + URL o siguiente paso claro (WhatsApp / link en bio). |
+
+**Cantidad de slides:** óptimo común **4–8** para no fatigar; máximo plataforma **20** si la historia lo justifica.
+
+## Pipeline ParaguAI (obligatorio si tocás carrusel de planes)
+
+- Storyboard y copy: `Campaigns/ParaguAI/10-carousel-planes-paraguai-es.md`.
+- Export raster **1080×1350**: `scripts/build_carousel_planes_png.py` + imágenes opcionales `assets/creativos/carousel-planes/side-NN.png` según README de esa carpeta.
+
+## Anti-patrones
+
+- Más de **una** idea principal por slide o titulares de **> 8 palabras** sin partirlos.
+- Texto pegado al borde inferior del lienzo como único CTA (riesgo con UI del feed).
+- Mezclar ratios dentro del mismo carrusel.
+- Omitir medición de altura en generación programática (solapamiento CTA / logo / copy).

@@ -1,0 +1,89 @@
+---
+id: rule.market-research.deepsearch.contract.v1
+kind: rule
+version: 1.0.0
+description: Defines subject scope, discovery breadth, and evidence contracts for the market deepsearch engine
+globs: **/.cursor/rules/market-research/**/*.mdc, **/docs/market-research/**/*.md, **/src/**/*.{ts,tsx,js,jsx,py}
+governs: ""
+implements: market-research.deepsearch.contract
+requires:
+  - rule.general.verify-info.v1
+  - templar.market-research.deepsearch-research-run.v1
+model_hints: { temp: 0.2, top_p: 0.9 }
+provenance: { owner: team-market-research, last_review: 2026-06-02 }
+alwaysApply: false
+---
+
+# Deepsearch Engine — Contract
+
+## Purpose & Scope
+
+Defines what a **deepsearch** run must cover for **market research**: normalized subject, systematic discovery across configured channels, deduplication, and evidence-backed statements. Prevents marketing language like “the whole internet” unless the architecture truly aggregates all configured connectors and that claim is documented.
+
+**Applies to**: Search/discovery modules, connector design, prompt packs, and QA criteria for research breadth.
+
+**Does not apply to**: Final ranking, business-model tagging, or social teardowns (see `rule.market-research.deepsearch.delivery.v1`).
+
+## Inputs (Contract)
+
+- **Subject**: One primary entity or niche (brand, product, service, or market niche) plus optional disambiguation (geo, segment, time window).
+- **Research goal**: Decision or deliverable the user needs (e.g. positioning, GTM, pricing, hiring)—used downstream for relevance; must be captured early.
+- **Source policy**: Which families of sources are in scope (web index, news, patents, filings, forums, social APIs, internal corpuses). If unspecified, implementation must use explicit defaults and document them.
+
+## Outputs (Contract)
+
+- **Normalized subject record**: canonical name, aliases, excluded homonyms.
+- **Query plan**: query families (brand+review, brand+pricing, product+SKU, niche+forum, etc.) appropriate to subject type.
+- **Raw hit set**: URLs or doc IDs with capture timestamp and connector id.
+- **Deduped evidence set**: merged near-duplicates; keep best canonical URL.
+- **Traceability**: every synthesized bullet in later stages must map to one or more evidence items or be marked as inference/hypothesis.
+
+## Deterministic Steps
+
+1. Normalize the subject and record disambiguation rules applied.
+2. Expand queries by subject type (brand vs product vs service vs niche) without drifting off-topic.
+3. Fetch from each enabled connector per source policy; record provenance (who/when/where from connector metadata).
+4. Deduplicate (URL, canonical link, near-duplicate text hash) and drop failed fetches with logged reason.
+5. Pass structured evidence forward to the delivery pipeline with **published or last-updated datetime** when available.
+6. Apply `rule.general.verify-info.v1`: do not state facts not supported by the evidence set or user-supplied files.
+
+## Formatting Requirements
+
+Internal artifacts MUST follow `templar.market-research.deepsearch-research-run.v1` (see `.cursor/templars/market-research/deepsearch-research-run-templar.md`). At minimum: `subject`, `goal`, `sources[]`, `evidence[]` with `url`, `retrievedAt`, `publishedAt` (nullable), `snippet` or pointer to stored content.
+
+## OPSEC and Leak Control
+
+- No credentials in logs or exported packs.
+- Respect rate limits, robots.txt / API terms, and regional privacy rules when retrieving or storing personal-related data.
+- Do not exfiltrate paywalled full text unless the deployment has lawful access.
+
+## Integration Points
+
+- Downstream: `rule.market-research.deepsearch.delivery.v1` consumes deduped evidence + datetimes.
+- Upstream: user goal and subject from product UI or API.
+
+## Failure Modes and Recovery
+
+- **Sparse niche**: widen query families and lower-confidence adjacent terms; flag coverage gaps explicitly.
+- **Subject ambiguity**: pause auto-merge; require user pick or show top candidates with differentiating evidence.
+
+## Provenance Footer Specification
+
+Research artifacts should end with: `Research-run: subject=… | connectors=… | contract=rule.market-research.deepsearch.contract.v1 | ts=ISO8601Z`
+
+## Related Rules
+
+- `templar.market-research.deepsearch-research-run.v1` — Canonical internal artifact shape
+- `rule.market-research.deepsearch.delivery.v1` — Ranking, economics, people, social
+- `rule.market-research.agent-application.v1` — When to load this rule
+- `rule.general.verify-info.v1` — Verification discipline
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Subject normalized with aliases and exclusions where needed
+- [ ] Query plan covers subject type; drift documented if narrowed
+- [ ] Every factual claim in downstream text traceable to evidence or labeled as inference
+- [ ] Published/updated timestamps captured when available for recency pipeline
+- [ ] Source policy explicit (no hidden “whole web” assumption)
+- [ ] OPSEC and connector ToS constraints respected
+- [ ] Internal run JSON matches `templar.market-research.deepsearch-research-run.v1`

@@ -1,0 +1,21 @@
+---
+description: Agent guidance for Lead Briefing files under Leads/. Use when creating or updating pre-discovery briefings, 15-minute call prep, pitching angles, pricing notes, or standardizing lead documentation. Apply rule.outreach.lead-briefing.standard.v1 and rule.outreach.language-locale.v1 (English internal narrative).
+implements: outreach.lead-briefing.agent-application
+alwaysApply: false
+---
+
+# Lead briefing — agent application
+
+When the user works on `Leads/**` lead prep, discovery calls, or “briefing like Wesley/Mark”:
+
+1. Load and follow `rule.outreach.lead-briefing.standard.v1` (file `lead-briefing-standard-rule.mdc` in this folder).
+2. For language: follow `rule.outreach.language-locale.v1` — **English** internal briefing narrative; **verbatim quotes** may stay in the lead’s language.
+3. Start from `Leads/_TEMPLATE – Lead Briefing (15-min discovery).txt` for new leads.
+4. Save completed briefings under `Leads/Briefings/<track>/` (see `Leads/Briefings/README.md`); use `Europe/`, `Paraguay-pipeline/`, or add a new track folder if needed.
+5. Keep the **discovery cover** scannable; move long use-case lists to `## Annex` after `---`.
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Standard rule sections reflected in the briefing file
+- [ ] Template or existing exemplar structure respected
+- [ ] No fabricated commercial facts

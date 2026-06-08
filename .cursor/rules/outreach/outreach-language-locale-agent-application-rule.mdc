@@ -1,0 +1,20 @@
+---
+description: Agent guidance for Dutch (or lead-locale) client outreach vs English internal docs. Apply rule.outreach.language-locale.v1 when editing Outreach/, email-history threads, or lead comms drafts in this repo.
+implements: outreach.language-locale.agent-application
+alwaysApply: false
+---
+
+# Outreach language — agent application
+
+When the user (or task) touches **outreach drafts**, **`Outreach/email-history/`**, **`Leads/`** briefing narrative, or asks for **mail/WhatsApp to Dutch leads**:
+
+1. Load **`rule.outreach.language-locale.v1`** (`outreach-language-locale-rule.mdc` in this folder).
+2. **Internal** text (headers, summaries, checklists, rules, README instructions) → **English**.
+3. **Client-facing** outbound (e-mail/WhatsApp body the lead receives) → **Dutch** for Dutch-speaking NL/BE leads unless the conversation is explicitly English; otherwise match the lead locale per that rule.
+4. In **`Outreach/email-history/threads/*.md`**, keep Dutch **only** inside the fenced **client draft**; everything outside the fence → **English**.
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Thread file structure follows English wrapper + locale-specific draft block
+- [ ] No Dutch internal section titles for team-only content
+- [ ] Lead briefing new prose in English (verbatim quotes may stay in source language)

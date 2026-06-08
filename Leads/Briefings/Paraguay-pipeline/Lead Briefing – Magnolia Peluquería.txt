@@ -1,0 +1,78 @@
+# Lead Briefing – Magnolia Peluquería
+
+## Metadata
+
+* **Lead name:** TBD — confirm decision maker on call
+* **Company:** Magnolia Peluquería (beauty / hair salon — Paraguay SMB pipeline)
+* **Role / title:** TBD
+* **Email / phone:** TBD
+* **Source / channel:** Internal org pipeline (Paraguay beauty & wellness lead-gen / site initiative)
+* **Briefing owner:** TBD
+* **Last updated:** 2026-06-08
+
+## Call logistics
+
+* **Scheduled:** TBD — state **Paraguay (UTC−4)** and AI Whisperers attendee time zones when booked
+* **Meeting link / dial-in:** TBD
+* **Attendees (us):** TBD
+* **Attendees (them):** TBD
+
+## Offer recap
+
+* Free ~15-minute discovery call
+* Post-call: tailored proposal within agreed SLA (TBD — align with standard promise)
+
+## Context so far
+
+* How contact started: TBD — outbound vs inbound vs partner intro
+* Lead tone (cold / warm / referral): TBD
+* Anything already promised (deliverable, scope, price): Unknown — ask on call
+
+## 15-minute discovery agenda (prioritized)
+
+1. **Current digital presence:** site, Instagram/WhatsApp, booking, no-show handling
+2. **Daily friction:** scheduling, reminders, inventory, staff coordination
+3. **What “success” looks like** in 90 days (revenue, time saved, fewer errors)
+4. **Budget / authority:** who signs; compare-to (agency, DIY, nothing)
+5. **Data & privacy:** customer lists, photos, minors — guardrails for any automation
+6. **Technical comfort:** who would operate tools after handoff
+
+## Pitch angle
+
+* AI Whisperers fits Paraguay SMB beauty verticals with **practical automation** (booking flows, content assist, light CRM) without over-selling raw “AI” buzzwords. Emphasize **Spanish-first** comms and **WhatsApp-native** patterns common in PY.
+* Proof points to emphasize:
+
+  * Regional delivery experience (LATAM ops, time zones)
+  * Agent + human-in-the-loop patterns for customer-facing touchpoints
+  * Phased roadmap: quick win → deeper integration
+
+## Pricing & packaging notes
+
+* **Signals heard:** Unknown — ask on call (no fabricated budget)
+* **Hypothesis:** Small **pilot** (e.g. booking/reminder workflow) before broader retainer — label as hypothesis until confirmed
+* **Unknowns for this call:** Decision maker, peak season constraints, existing POS or booking stack
+* **Do not quote on the call without:** Scope boundaries, who maintains content, and written success criteria
+
+## Risks, compliance, guardrails
+
+* Customer imagery and personal data — align with local expectations; no scraping or ToS-violating messaging without review
+* Do not commit to specific channel automation (e.g. Meta/WhatsApp API limits) until technical check
+
+## Next steps
+
+1. Book discovery with time zones confirmed in writing
+2. Assign briefing owner and prep 3 tailored questions from their public channels (when available)
+3. Post-call: proposal owner + deadline
+
+## Overall assessment
+
+* **Fit:** TBD — default **medium** for pipeline SMB until first conversation
+* **Urgency:** TBD
+* **Red flags:** None recorded pre-call
+* **Recommended deal shape:** Discovery → scoped pilot → retainer or project phase 2
+
+---
+
+## Annex (optional — deep notes, use cases, research)
+
+* Link internal research repo or CRM export here when available (do not paste secrets).

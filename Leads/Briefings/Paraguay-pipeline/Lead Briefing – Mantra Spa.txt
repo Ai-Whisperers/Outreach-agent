@@ -1,0 +1,78 @@
+# Lead Briefing – Mantra Spa
+
+## Metadata
+
+* **Lead name:** TBD — confirm decision maker on call
+* **Company:** Mantra Spa (wellness / spa — Paraguay SMB pipeline)
+* **Role / title:** TBD
+* **Email / phone:** TBD
+* **Source / channel:** Internal org pipeline (Paraguay beauty & wellness lead-gen / site initiative)
+* **Briefing owner:** TBD
+* **Last updated:** 2026-06-08
+
+## Call logistics
+
+* **Scheduled:** TBD — state **Paraguay (UTC−4)** and AI Whisperers attendee time zones when booked
+* **Meeting link / dial-in:** TBD
+* **Attendees (us):** TBD
+* **Attendees (them):** TBD
+
+## Offer recap
+
+* Free ~15-minute discovery call
+* Post-call: tailored proposal within agreed SLA (TBD — align with standard promise)
+
+## Context so far
+
+* How contact started: TBD
+* Lead tone (cold / warm / referral): TBD
+* Anything already promised (deliverable, scope, price): Unknown — ask on call
+
+## 15-minute discovery agenda (prioritized)
+
+1. **Booking & packages:** how appointments, bundles, and upsells are managed today
+2. **Client comms:** WhatsApp vs phone vs web; response-time pain
+3. **Staff & rooms:** capacity planning, reminders, no-shows
+4. **Marketing rhythm:** promotions, seasonal campaigns, repeat visits
+5. **Systems:** existing site/PMS/spreadsheet stack
+6. **Success metrics:** occupancy, LTV, time on admin — pick one north star
+
+## Pitch angle
+
+* Position AI Whisperers as **ops-first**: reduce admin around appointments and follow-ups so front desk and therapists stay client-facing. Wellness buyers often care about **calm, reliable** automation vs experimental chatbots.
+* Proof points:
+
+  * LATAM-appropriate channels (WhatsApp-first workflows)
+  * Clear human approval for anything client-visible
+  * Pilot scoped to one journey (e.g. post-visit follow-up)
+
+## Pricing & packaging notes
+
+* **Signals heard:** Unknown — ask on call
+* **Hypothesis:** Workshop or **single-journey pilot** before platform build
+* **Unknowns:** Seasonality, franchise vs independent, data on clients (health-sensitive copy)
+* **Do not quote on the call without:** Data-handling agreement for client lists and messaging scope
+
+## Risks, compliance, guardrails
+
+* Health/wellness claims in messaging — avoid unsubstantiated medical language
+* Automated outreach to client lists — confirm consent and channel rules
+
+## Next steps
+
+1. Schedule discovery; confirm attendees
+2. Pre-call: skim public web/social for 3 specific questions
+3. Post-call: proposal + owner + date
+
+## Overall assessment
+
+* **Fit:** TBD — medium until qualified
+* **Urgency:** TBD
+* **Red flags:** TBD
+* **Recommended deal shape:** Pilot on one workflow → expand if metrics hit
+
+---
+
+## Annex (optional — deep notes, use cases, research)
+
+* Internal pipeline notes / links (no secrets in this file).

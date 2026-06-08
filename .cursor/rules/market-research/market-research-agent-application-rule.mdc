@@ -1,0 +1,88 @@
+---
+id: rule.market-research.agent-application.v1
+kind: rule
+version: 1.0.0
+description: Agent guidance for when and how to apply market research / deepsearch rules. Use when user requests involve deep market search, brand or niche intelligence, recency-ranked synthesis, business model mapping, key people in a field, competitor social and outreach analysis, or delivery pipelines for research outputs.
+implements: market-research.agent-application
+requires:
+  - rule.market-research.deepsearch.contract.v1
+  - rule.market-research.deepsearch.delivery.v1
+model_hints: { temp: 0.2, top_p: 0.9 }
+provenance: { owner: team-market-research, last_review: 2026-06-02 }
+alwaysApply: false
+---
+
+# Market Research — Agent Application Rule
+
+## Purpose & Scope
+
+Coordinates **when** agents and implementers should load `rule.market-research.deepsearch.contract.v1` and `rule.market-research.deepsearch.delivery.v1` so behavior stays consistent across code, prompts, and user-facing research.
+
+**Applies to**: Market deepsearch features, research report generation, filter design, competitor/social intelligence, and related specs.
+
+**Does not apply to**: Generic web apps with no research pipeline, or tasks that only need `rule.general.verify-info.v1` without domain contracts.
+
+## Inputs (Contract)
+
+- User or ticket intent mentioning market research, deepsearch, niche/brand/product/service analysis, economic/business model mapping, influencers/experts, social/outreach teardowns, or “most recent” evidence selection.
+
+## Outputs (Contract)
+
+- Explicit choice to apply **contract** rule, **delivery** rule, or **both**
+- No new product requirements invented beyond loaded rules
+
+## Request Pattern → Rule Mapping
+
+| Pattern | Load |
+|--------|------|
+| Subject taxonomy, query expansion, source breadth, dedupe, “how wide to search” | `rule.market-research.deepsearch.contract.v1` |
+| Recency windows, relevance-to-goal scoring, ranking, final pack structure | `rule.market-research.deepsearch.delivery.v1` |
+| Business model / value chain / pricing evidence | `rule.market-research.deepsearch.delivery.v1` (economics section) |
+| Key people, credibility signals, org chart of influence | `rule.market-research.deepsearch.delivery.v1` (people section) |
+| Social inventory, example posts, tone/format/cadence analysis, “how to do better” | `rule.market-research.deepsearch.delivery.v1` (outreach intelligence section) |
+| Full pipeline (discovery → filters → report) | **Both** rules, contract before delivery; use templars `templar.market-research.deepsearch-research-run.v1` then `templar.market-research.deepsearch-pack.v1` |
+
+## Deterministic Steps
+
+1. Classify the request using the table above.
+2. Load `rule.market-research.deepsearch.contract.v1` when discovery or subject scope is in play.
+3. Load `rule.market-research.deepsearch.delivery.v1` when ranking, economics, people, or social intel is in play.
+4. When emitting structured outputs, use the market-research templars referenced in those rules (research run JSON, then delivery pack Markdown).
+5. Always respect `rule.general.verify-info.v1` for factual assertions (see contract rule `requires`).
+
+## Formatting Requirements
+
+None.
+
+## OPSEC and Leak Control
+
+Do not use this rule to justify harvesting non-public personal data, bypassing authentication, or violating platform ToS.
+
+## Integration Points
+
+- `rule.market-research.overview.v1` — Navigation and manifest
+- `prompt.market-research.run-deepsearch-pack.v1` — End-to-end prompt (see `.cursor/rules/rule-index.yml`)
+- `rule.general.verify-info.v1` — Evidence discipline
+
+## Failure Modes and Recovery
+
+**Ambiguous scope**: Load both rules and separate “discovery” vs “delivery” sections in the answer or design doc.
+
+## Provenance Footer Specification
+
+N/A
+
+## Related Rules
+
+- `rule.market-research.overview.v1` — Index and philosophy
+- `rule.market-research.deepsearch.contract.v1` — Discovery contract
+- `rule.market-research.deepsearch.delivery.v1` — Filters and intelligence
+- `rule.general.verify-info.v1` — Verification
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Correct rule(s) selected from mapping table
+- [ ] Contract loaded before delivery when both apply
+- [ ] No file writes implied by this meta-rule
+- [ ] Ethical/legal constraints from delivery rule acknowledged when handling social data
+- [ ] References use rule IDs, not paths

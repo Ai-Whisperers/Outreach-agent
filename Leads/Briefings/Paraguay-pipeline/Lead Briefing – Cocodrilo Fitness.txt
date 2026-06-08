@@ -1,0 +1,78 @@
+# Lead Briefing – Cocodrilo Fitness
+
+## Metadata
+
+* **Lead name:** TBD — confirm decision maker on call
+* **Company:** Cocodrilo Fitness (fitness — Paraguay SMB pipeline)
+* **Role / title:** TBD
+* **Email / phone:** TBD
+* **Source / channel:** Internal org pipeline (Paraguay wellness/fitness lead-gen / site initiative)
+* **Briefing owner:** TBD
+* **Last updated:** 2026-06-08
+
+## Call logistics
+
+* **Scheduled:** TBD — **Paraguay (UTC−4)** vs AI Whisperers attendee zones
+* **Meeting link / dial-in:** TBD
+* **Attendees (us):** TBD
+* **Attendees (them):** TBD
+
+## Offer recap
+
+* Free ~15-minute discovery call
+* Post-call: tailored proposal within agreed SLA (TBD)
+
+## Context so far
+
+* How contact started: TBD
+* Lead tone (cold / warm / referral): TBD
+* Anything already promised: Unknown — ask on call
+
+## 15-minute discovery agenda (prioritized)
+
+1. **Ideal member:** B2C mix, corporate, youth programs?
+2. **Funnel:** how a stranger becomes a paying member today (steps + drop-off)
+3. **Ops load:** what the team spends most weekly hours on besides coaching
+4. **Digital:** site, social ads, Google, partnerships — what works
+5. **Competitive set:** who they compare themselves to (pricing and positioning)
+6. **First win:** one metric they would improve in 60 days if they could
+
+## Pitch angle
+
+* Same fitness-vertical framing as sibling pipeline leads: **retention + ops**, not gimmicks. Cocodrilo may want **distinct brand voice** in automation—capture that in pitch angle after pre-call scan.
+* Proof points:
+
+  * Custom tone guidelines per brand (spa vs gym voice)
+  * LATAM delivery and WhatsApp-first playbooks
+  * Phased scope to de-risk
+
+## Pricing & packaging notes
+
+* **Signals heard:** Unknown — ask on call
+* **Hypothesis:** Small build or pilot around **lead response** or **class comms**
+* **Unknowns:** Single location vs multi; staffing; current software
+* **Do not quote on the call without:** Clear boundary on ads spend vs automation build
+
+## Risks, compliance, guardrails
+
+* Fitness claims and before/after content — keep messaging compliant with platform rules
+* Automated DMs — engineering + ToS review before promising
+
+## Next steps
+
+1. Schedule discovery
+2. Owner assigned + pre-call research checklist
+3. Post-call proposal path
+
+## Overall assessment
+
+* **Fit:** TBD
+* **Urgency:** TBD
+* **Red flags:** TBD
+* **Recommended deal shape:** Discovery → pilot → optional retainer
+
+---
+
+## Annex (optional — deep notes, use cases, research)
+
+* Link market or creative research when available.

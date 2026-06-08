@@ -1,0 +1,76 @@
+---
+id: rule.campaigns.paraguai-copy-language.v1
+kind: rule
+version: 1.0.0
+description: Prohíbe la palabra Google en copy ParaguAI; usa online, página web, internet y equivalentes
+globs:
+  - "AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/**"
+  - "**/Campaigns/ParaguAI/**"
+implements: campaigns.paraguai.copy
+requires:
+  - rule.campaigns.paraguai-brand-visual.v1
+provenance:
+  owner: marketing
+  last_review: 2026-05-19
+alwaysApply: false
+---
+
+# ParaguAI — Regla de lenguaje (sin “Google”)
+
+## Purpose
+
+En todo copy, posts, slogans, headlines de creativos y prompts de campaña **ParaguAI**, no usar la marca **Google** ni verbos derivados (*googlear*, *googlea*). Comunicar el mismo beneficio con lenguaje neutro: **online**, **página web**, **internet**, **en la web**.
+
+## Scope
+
+- Markdown de campaña bajo `Campaigns/ParaguAI/`
+- Texto en imágenes sociales (`verticals/*/social-1080.png`): el brief aprobado vive en `verticals/*/image-prompt-es.md` (revisar antes de generar).
+- Prompts en `03-social-post-prompts-es.md`
+- Investigación de palabras en `brand/WORDS-AND-COLORS-RESEARCH-es.md`
+
+## Prohibido
+
+| No usar | Motivo |
+|---------|--------|
+| Google | Marca ajena; mensaje genérico basta |
+| googlear, googlea, googlean | Anglicismo + marca |
+| Google Maps | Decir **mapa de ubicación** o **ubicación en tu página** |
+| “Aparecé en Google” | Decir **aparecé online** / **tené página web** |
+| “Buscá en Google” (instrucciones creativo) | **Buscá en internet** / **buscá online** |
+
+## Usar en su lugar
+
+| Concepto | Frases recomendadas (ES-PY) |
+|----------|----------------------------|
+| Visibilidad búsqueda | aparecé **online**, te encuentran **en internet**, tu **página web** profesional |
+| Sustituir “en Google” | **en la web**, **online**, **en internet** |
+| Cliente investiga | te **buscan online**, miran tu **sitio** antes de escribir |
+| Ubicación | **mapa en tu web**, **ubicación en tu página**, **cómo llegar** (botón en el sitio) |
+| vs solo Instagram | Instagram no reemplaza tu **página web** ni tu dominio **.com.py** |
+| SEO (interno/docs) | OK en documentación técnica interna; en copy público preferir **que te encuentren online** |
+
+## Ejemplos de reemplazo
+
+| Antes | Después |
+|-------|---------|
+| Tu gym en Google en 48h | Tu gym **online** en 48h |
+| Te googlean antes de agendar | Te **buscan online** antes de agendar |
+| Google Maps + SEO | **Mapa** en tu web + SEO local |
+| Si no aparecés en Google | Si no tenés **página web** / si no aparecés **online** |
+| Del campo a Google | Del campo **a la web** |
+| Instagram no es Google | Instagram no es tu **sitio web** |
+
+## Headlines en imágenes
+
+Los PNG en `verticals/*/social-1080.png` deben seguir esta regla en el texto visible. Si el creativo dice “Google”, regenerar o editar texto.
+
+## Checklist antes de publicar
+
+- [ ] Buscar `Google`, `google`, `googl` en el archivo (Ctrl+F)
+- [ ] CTA y body usan **online** / **página web** / **sitio**
+- [ ] “Maps” solo como “mapa” o “ubicación en tu web”, sin marca Google
+
+## Integración
+
+- Complementa [paraguai-brand-visual-rule.mdc](paraguai-brand-visual-rule.mdc) (logo/colores).
+- Actualizar [WORDS-AND-COLORS-RESEARCH-es.md](../../AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/WORDS-AND-COLORS-RESEARCH-es.md) al cambiar slogans.

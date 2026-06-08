@@ -1,0 +1,13 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local Cursor / IDE noise (optional: remove next line to version chat transcripts)
+.specstory/

@@ -1,0 +1,45 @@
+---
+id: rule.campaigns.paraguai-operations-pipeline.v1
+kind: rule
+version: 1.0.0
+description: Pipeline ParaguAI — etapas P0–P6, DoD, prioridades y fuentes de verdad
+globs:
+  - "AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/**"
+  - "**/Campaigns/ParaguAI/**"
+implements: campaigns.paraguai.operations
+requires:
+  - rule.campaigns.paraguai-brand-visual.v1
+provenance:
+  owner: marketing
+  last_review: 2026-05-20
+alwaysApply: false
+---
+
+# ParaguAI — Operaciones y pipeline
+
+Para tareas que implican **producir, revisar o publicar** contenido de campaña, seguí:
+
+`AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/OPERATIONS-PIPELINE-es.md`
+
+## Resumen de etapas
+
+| Etapa | Qué se completa |
+|-------|-----------------|
+| P0 | Brief y vertical (`verticals/{slug}/README.md`) |
+| P1 | Copy desde prompts (`03`, `04`) |
+| P2 | `image-prompt-es.md` aprobado |
+| P3 | Creativo exportado en `assets/creativos/vertical-<slug>-social-1080.png` (o ratio definido) |
+| P4 | QA: URL en VERTICAL-DEMOS, UTM, marca, copy |
+| P5 | Publicación / cola |
+| P6 | Métricas |
+
+## Prioridad si hay conflicto
+
+1. Verdad respecto al sitio en producción.  
+2. Marca (logo + nombre).  
+3. Deep link correcto.  
+4. Estética del rubro.
+
+## Definition of Done (post feed)
+
+No marcar “listo” sin: slug documentado, URL canónica + UTM, creativo alineado a guía de marca, copy sin “Google”, evidencia de publicación o id en cola.

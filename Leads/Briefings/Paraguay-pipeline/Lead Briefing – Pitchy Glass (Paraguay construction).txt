@@ -1,0 +1,78 @@
+# Lead Briefing – Pitchy Glass (Paraguay construction)
+
+## Metadata
+
+* **Lead name:** TBD — may be multiple stakeholders (sales, owner, distributor)
+* **Company:** Pitchy / Blindex-style glass sales — **construction sector Paraguay** (vertical pipeline; market intel with lead-style lists in org research)
+* **Role / title:** TBD
+* **Email / phone:** TBD
+* **Source / channel:** Internal org market research → outbound or partner-led intros (TBD)
+* **Briefing owner:** TBD
+* **Last updated:** 2026-06-08
+
+## Call logistics
+
+* **Scheduled:** TBD — **Paraguay (UTC−4)** + AI Whisperers zones
+* **Meeting link / dial-in:** TBD
+* **Attendees (us):** TBD
+* **Attendees (them):** TBD
+
+## Offer recap
+
+* Free ~15-minute discovery call
+* Post-call: proposal / next engagement (align with standard org promise)
+
+## Context so far
+
+* Vertical originated from **org market intelligence** (competitors, lead lists, action plan). Treat first calls as **qualification**: which accounts are active opportunities vs research-only.
+* Lead tone: TBD
+* Prior commitments: Unknown — ask on call
+
+## 15-minute discovery agenda (prioritized)
+
+1. **Go-to-market today:** channels (builders, architects, retail), win rate drivers
+2. **CRM / follow-up:** how quotes and post-site-visit follow-ups are tracked
+3. **Seasonality & supply:** constraints that change what “automation” should do
+4. **Competitive framing:** price vs service vs speed — their narrative
+5. **Data:** catalog, pricing sheets, technical specs — where they live
+6. **Decision process:** who approves budget for tools or retainers
+
+## Pitch angle
+
+* B2B construction supply benefits from **quote velocity**, **spec lookup**, and **consistent follow-up**—areas where agents and structured workflows help without replacing relationships.
+* Proof points:
+
+  * Document-heavy workflows (specs, PDFs, comparisons)
+  * Spanish-first comms and regional context
+  * Phased: internal copilot before any external messaging automation
+
+## Pricing & packaging notes
+
+* **Signals heard:** Unknown — ask on call (no numbers from research pasted as “confirmed”)
+* **Hypothesis:** Roadmap workshop + **internal** knowledge/quote assist pilot before customer-facing bots
+* **Unknowns:** Team size, IT constraints, incumbent software
+* **Do not quote on the call without:** Scope for human review on pricing quotes
+
+## Risks, compliance, guardrails
+
+* **Pricing accuracy:** no autonomous quote generation without explicit rules and sign-off
+* Competitive intel — keep internal research out of customer-facing claims unless verified
+
+## Next steps
+
+1. Prioritize account list from research → pick top N for outreach
+2. Book first discovery with clearest ICP match
+3. Sync CRM / spreadsheet owner
+
+## Overall assessment
+
+* **Fit:** TBD — strategic vertical; depends on buyer urgency
+* **Urgency:** TBD
+* **Red flags:** Commodity price war only; no owner for adoption
+* **Recommended deal shape:** Workshop → internal pilot → optional customer-facing phase
+
+---
+
+## Annex (optional — deep notes, use cases, research)
+
+* Paste **links** to org market research repo or exports (no secrets). Cite recency when using annex data in live calls.

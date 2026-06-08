@@ -1,0 +1,78 @@
+Lead Briefing – {{LEAD_OR_COMPANY_NAME}}
+
+## Metadata
+
+* **Lead name:**
+* **Company:**
+* **Role / title:**
+* **Email / phone:** (internal use)
+* **Source / channel:** (e.g. referral, inbound, partner)
+* **Briefing owner:**
+* **Last updated:** YYYY-MM-DD
+
+## Call logistics
+
+* **Scheduled:** (local for lead) — (local for AI Whisperers, e.g. PY)
+* **Meeting link / dial-in:**
+* **Attendees (us):**
+* **Attendees (them):**
+
+## Offer recap
+
+* Free ~15-minute discovery call.
+* Post-call: {{e.g. tailored proposal within 24 hours — adjust to actual promise}}
+
+## Context so far
+
+* How contact started:
+* Lead tone (cold / warm / referral):
+* Anything already promised (deliverable, scope, price):
+
+## 15-minute discovery agenda (prioritized)
+
+1.
+2.
+3.
+4.
+5.
+(Max 8 bullets total — must-haves for quoting)
+
+## Pitch angle
+
+* One paragraph: why AI Whisperers fits *this* lead’s situation (operations, LATAM, agents, etc.).
+* Three proof points or patterns we will emphasize:
+
+  * 
+  * 
+  * 
+
+## Pricing & packaging notes
+
+* **Signals heard:** (budget band, “cheap”, urgency, compare-to, DIY — only if actually said)
+* **Hypothesis:** (e.g. roadmap workshop vs build phase — label as hypothesis)
+* **Unknowns for this call:** (decision maker, timeline, success metric, technical constraints)
+* **Do not quote on the call without:** (internal rule — e.g. scope sign-off, NDA)
+
+## Risks, compliance, guardrails
+
+* (e.g. LinkedIn automation — no commitment until engineering review)
+* (e.g. GDPR / voice data / student data)
+
+## Next steps
+
+1.
+2.
+3.
+
+## Overall assessment
+
+* **Fit:** (high / medium / low) + one line why
+* **Urgency:**
+* **Red flags:**
+* **Recommended deal shape:** (e.g. phased roadmap, pilot, retainer)
+
+---
+
+## Annex (optional — deep notes, use cases, research)
+
+* Paste or link longer material here so the sections above stay short.

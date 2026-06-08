@@ -1,0 +1,70 @@
+---
+id: rule.outreach.language-locale.v1
+kind: rule
+version: 1.0.0
+description: Dutch (or lead locale) for client-facing outreach; English for all internal team documentation in this workspace.
+globs: Outreach/**/*, Leads/**/*
+governs: Outreach/**/*, Leads/**/*
+implements: outreach.language-locale
+requires: []
+model_hints: { temp: 0.2, top_p: 0.9 }
+provenance: { owner: outreach-agent, last_review: 2026-06-08 }
+alwaysApply: false
+---
+
+# Outreach language — client vs internal
+
+## Purpose
+
+Keep **one clear split**: leads and clients read **their** language where we sell and support; the team, repo, and agents use **English** for everything that is not meant to be sent or shown to the client as-is.
+
+## Client-facing language (match the lead)
+
+| Situation | Language |
+|-----------|----------|
+| Dutch-speaking lead (NL/BE), same language in WhatsApp/e-mail | **Dutch** for outbound copy unless they explicitly switched to English |
+| Lead writes in English | **English** |
+| Spanish-first lead (e.g. Paraguay) | **Spanish** unless the thread is consistently English |
+| Mixed thread | Follow the **language the lead last used** for the reply, or mirror the invite language they accepted |
+
+Apply to: e-mail bodies, WhatsApp-style outreach drafts, calendar descriptions visible to the guest, public-facing snippets we prepare **for them to send**.
+
+## Internal language (always English)
+
+Write in **English**:
+
+- **Section headings** and **summaries** in `Outreach/email-history/**` (thread logs, timelines, checklists, “before you send”, risk callouts).
+- **`Outreach/README.md`**, **`Outreach/email-history/README.md`**, and other repo docs that explain process to the team.
+- **Cursor rules** and **rule-index** entries for outreach.
+- **Lead briefings** (`Leads/**`): narrative sections (Metadata explanations you add, agenda notes, pitch angle, risks) — so the whole team can scan quickly.
+- **Verbatim client quotes** in briefings may stay in the **source language**; add a **one-line English gloss** in parentheses when the quote is long or business-critical.
+
+Do **not** switch internal summaries to Dutch just because the lead is Dutch — only the **outbound draft block** (or pasted inbound) uses Dutch.
+
+## File layout pattern (`Outreach/email-history/threads/*.md`)
+
+1. **English** front matter: links to briefing, channel, date, internal summary bullets.
+2. **Client-facing draft** inside a fenced block (e.g. ` ```text ` … ` ``` `) in **Dutch** (or appropriate locale).
+3. **English** checklists and compliance notes below the fence.
+
+## Lead briefings vs outreach
+
+- **Briefing** = internal prep → **English** for sections you control; quote the lead in original language when needed.
+- **Thread log** = internal audit trail → **English** around the draft; **Dutch** (etc.) only inside the quoted outbound/inbound mail body.
+
+## Failure modes
+
+- **All-Dutch thread files** → hard for non-Dutch teammates and agents; move Dutch into the client draft fence only.
+- **English e-mail to a Dutch-only SMB** without reason → weak relationship fit; fix to Dutch unless they asked for English.
+
+## Related rules
+
+- `rule.outreach.lead-briefing.standard.v1` — briefing structure (English narrative + optional source-language quotes)
+- `rule.outreach.lead-briefing.agent-application.v1` — when to load briefing rules
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Internal headings/summaries in `Outreach/email-history/**` are **English**
+- [ ] Client-facing outbound in `threads/*.md` matches **lead locale** (Dutch for NL leads unless thread is English)
+- [ ] New `Leads/**` briefing prose you add is **English** (quotes excepted)
+- [ ] Rules and Outreach README updates stay **English**

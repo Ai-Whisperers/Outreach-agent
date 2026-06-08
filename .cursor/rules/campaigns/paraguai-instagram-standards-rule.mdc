@@ -1,0 +1,42 @@
+---
+id: rule.campaigns.paraguai-instagram-standards.v1
+kind: rule
+version: 1.0.0
+description: Estándares de Instagram para ParaguAI — formatos, caption, deep links, checklists
+globs:
+  - "AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/**"
+  - "**/Campaigns/ParaguAI/**"
+implements: campaigns.paraguai.instagram
+requires:
+  - rule.campaigns.paraguai-copy-language.v1
+  - rule.campaigns.paraguai-brand-visual.v1
+provenance:
+  owner: marketing
+  last_review: 2026-05-20
+alwaysApply: false
+---
+
+# ParaguAI — Estándares Instagram
+
+Antes de redactar o aprobar **posts de Instagram** (caption, guion, overlays), leé:
+
+`AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/INSTAGRAM-STANDARDS-es.md`
+
+## Obligatorio en cada pieza
+
+1. **Estructura de caption:** hook → cuerpo → (prueba opcional) → CTA → hashtags medidos (5–10).
+2. **Deep link:** si el post muestra un rubro, la URL debe ser la de `AI-Whisperers-Marketing-Hub/Campaigns/ParaguAI/brand/VERTICAL-DEMOS.md` para ese `slug`, con UTM (`utm_source=instagram`, `utm_medium=organic`, `utm_campaign={slug}`).
+3. **Marca visual:** logo y nombre según regla `paraguai-brand-visual` y guía de marca.
+4. **Lenguaje:** sin “Google”; español paraguayo — regla `paraguai-copy-language`.
+5. **Reels:** zona segura inferior para UI de Instagram; subtítulos o texto quemado para accesibilidad.
+
+## Formatos
+
+- Feed 1:1 **1080×1080** por defecto; carrusel = un archivo por slide misma resolución.
+- Reels/stories **9:16** según tabla en INSTAGRAM-STANDARDS.
+
+## No hacer
+
+- Mezclar tres CTAs con igual peso (llamar + DM + link).
+- Inventar URL o path que no esté en VERTICAL-DEMOS.
+- Prometer beneficios que no estén en paragu-ai.com.

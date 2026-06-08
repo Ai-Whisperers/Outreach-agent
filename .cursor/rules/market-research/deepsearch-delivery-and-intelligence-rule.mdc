@@ -1,0 +1,99 @@
+---
+id: rule.market-research.deepsearch.delivery.v1
+kind: rule
+version: 1.0.0
+description: Defines recency and relevance filters, economic mapping, key-people analysis, and social/outreach intelligence for deepsearch delivery packs
+globs: **/.cursor/rules/market-research/**/*.mdc, **/docs/market-research/**/*.md, **/src/**/*.{ts,tsx,js,jsx,py}
+governs: ""
+implements: market-research.deepsearch.delivery
+requires:
+  - rule.market-research.deepsearch.contract.v1
+  - rule.general.verify-info.v1
+  - templar.market-research.deepsearch-pack.v1
+model_hints: { temp: 0.2, top_p: 0.9 }
+provenance: { owner: team-market-research, last_review: 2026-06-02 }
+alwaysApply: false
+---
+
+# Deepsearch Delivery — Filters & Market Intelligence
+
+## Purpose & Scope
+
+Defines how evidence becomes a **user-facing pack**: recency-first within quality gates, **goal-linked relevance**, structured **economic / business-model** views, **key people** in the field, and **outreach intelligence** (channels, example posts, pattern analysis, actionable recommendations). Outputs should help the user compete **ethically**—pattern adoption, not impersonation.
+
+**Applies to**: Ranking, report templates, “most recent of the recent” logic, competitor social analysis, and executive summaries for market decisions.
+
+**Does not apply to**: Raw crawling or connector logic (see `rule.market-research.deepsearch.contract.v1`).
+
+## Inputs (Contract)
+
+- Deduped **evidence set** with `publishedAt` / `updatedAt` / `retrievedAt` per `rule.market-research.deepsearch.contract.v1`.
+- **Research goal** (decision or artifact the user is driving toward).
+- Optional **recency policy**: half-life or hard cutoff per domain (news vs regulatory vs academic vs social).
+
+## Outputs (Contract)
+
+Final pack sections (order flexible, all must be addressable):
+
+1. **Executive tie-in**: 3–7 bullets, each tagged `fact` / `inference` / `hypothesis` with pointers to evidence ids.
+2. **Recency-ranked findings**: table or list sorted by effective date with **quality score** (authority, corroboration, independence—not freshness alone).
+3. **Relevance to goal**: explicit mapping “finding → implication for goal.”
+4. **Economics & business model**: structured subsections—customer, value prop, revenue mechanics, pricing signals, distribution, suppliers/partners, defensibility/moats—each with evidence or “unknown.”
+5. **Key people & orgs**: roles, affiliations, why they matter for this niche, **influence signals** (citations, patents, talks, follower tier where public and ToS-compliant). No doxxing or private-data speculation.
+6. **Outreach & social intelligence**: channel inventory (e.g. LinkedIn, X, YouTube, newsletters), **example posts** (link + short quoted excerpt within fair use), dimensions to analyze (hook, CTA, format, cadence, tone, creative device), and a **“do better”** section: gaps vs leaders and **non-deceptive** recommendations.
+7. **Limitations**: coverage gaps, stale regions, conflicts between sources.
+
+## Deterministic Steps
+
+1. Parse research goal into 3–5 **relevance facets** (e.g. pricing, trust, distribution).
+2. Compute **effective date** per item: prefer `publishedAt`, else `updatedAt`, else `retrievedAt` with a “date unknown” flag.
+3. Apply **recency policy**: within a freshness window, rank by composite score (authority × corroboration × facet match × recency decay). “Most recent of the recent” means: among **high-enough quality**, take the newest; do not promote low-quality viral noise solely for freshness.
+4. Filter or demote items that fail minimum corroboration or are off-facet unless marked as “peripheral watchlist.”
+5. Build economics section only from cited evidence; mark inference chains explicitly.
+6. For people: merge duplicates; cap list to the most impactful for the goal with rationale per inclusion.
+7. For social: only public posts; store permalink; analyze structure—not fabricate DMs or private metrics.
+8. Run `rule.general.verify-info.v1` on the final pack; remove or relabel unsupported statements.
+
+## Formatting Requirements
+
+- Final user-facing packs MUST follow `templar.market-research.deepsearch-pack.v1` (see `.cursor/templars/market-research/deepsearch-pack-templar.md`).
+- Use stable evidence ids in mappings (`E-12`, etc.) consistent with upstream artifacts.
+- Example posts: `url`, `platform`, `date` (if shown), `≤25-word excerpt`, `pattern tags`.
+
+## OPSEC and Leak Control
+
+- No scraping behind logins without authorized access.
+- No forged engagement or instructions to impersonate a competitor’s voice.
+- Minimize PII; aggregate follower tiers instead of invasive personal detail unless publicly mission-critical and justified.
+
+## Integration Points
+
+- Upstream: `rule.market-research.deepsearch.contract.v1`.
+- Product UX: user selects recency policy and goal before run.
+
+## Failure Modes and Recovery
+
+- **Missing dates**: degrade recency score; surface “undated cluster” separately.
+- **Goal mismatch**: return clarifying questions or produce two relevance columns (primary vs secondary).
+
+## Provenance Footer Specification
+
+Append: `Delivery: rule.market-research.deepsearch.delivery.v1 | goal-facets=… | recency-policy=… | ts=ISO8601Z`
+
+## Related Rules
+
+- `templar.market-research.deepsearch-pack.v1` — Canonical user-facing pack shape
+- `rule.market-research.deepsearch.contract.v1` — Evidence and discovery
+- `rule.market-research.agent-application.v1` — Invocation map
+- `rule.general.verify-info.v1` — Verification
+
+## FINAL MUST-PASS CHECKLIST
+
+- [ ] Recency uses effective dates; quality gates prevent “fresh junk”
+- [ ] Every executive bullet tagged fact/inference/hypothesis with evidence or caveat
+- [ ] Economics section has evidence or explicit “unknown”
+- [ ] People list justified by goal-linked influence signals; no doxxing
+- [ ] Social section uses public permalinks; excerpts short; recommendations ethical
+- [ ] Limitations section lists coverage gaps
+- [ ] Final text passes verification discipline (`rule.general.verify-info.v1`)
+- [ ] Pack layout matches `templar.market-research.deepsearch-pack.v1`
