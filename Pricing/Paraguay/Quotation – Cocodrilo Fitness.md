@@ -1,43 +1,54 @@
 # Propuesta — Automatización para Gimnasios
 **Cocodrilo Fitness**
 
-*Precios en Guaraníes adaptados al mercado paraguayo.*
+*Precios mensuales en Guaraníes. Setup único por plan.*
 
 ---
 
-## Opción A: Piloto — Captación de Leads
+## Plan Básico — Presencia Digital
 
-**Gs. 7.000.000** — precio fijo
+**Gs. 150.000/mes**
+
+- Página web profesional (landing page)
+- Hosting y dominio incluido
+- Diseño adaptable a celulares
+- Galería de fotos y videos
+- Soporte por email
+
+*Setup único: Gs. 500.000*
+
+---
+
+## Plan Profesional — Site + Captación de Leads (Recomendado)
+
+**Gs. 450.000/mes**
+
+Todo lo del Plan Básico más:
 
 - Automatización de respuesta a leads (Instagram, web, WhatsApp → CRM)
-- Seguimiento automático de prospectos con mensajes personalizados
+- Seguimiento automático de prospectos personalizado
 - Recordatorios de clase vía WhatsApp
-- 30 días de piloto
-- Capacitación al equipo
-- 2 semanas de soporte post-piloto
+- Chatbot informativo para miembros
+- Soporte prioritario
+
+*Setup único: Gs. 1.500.000*
 
 ---
 
-## Opción B: Gestión de Miembros Completa (Recomendado)
+## Plan Premium — Gestión Completa de Miembros
 
-**Gs. 16.000.000** — precio fijo
+**Gs. 1.000.000/mes**
 
-Incluye Opción A más:
+Todo lo del Plan Profesional más:
 
 - Notificaciones automáticas de renovación y pagos
 - Gestión de no-shows con re-asignación automática
 - Encuestas de satisfacción automatizadas post-clase
-- Dashboard de retención para el equipo
-- 60 días de soporte
+- Dashboard de retención y métricas
+- Soporte 24h hábiles
+
+*Setup único: Gs. 3.000.000*
 
 ---
 
-## Opción C: Retainer Mensual
-
-**Gs. 3.500.000/mes**
-
-Mantenimiento + 1 nueva automatización por trimestre + soporte prioritario
-
----
-
-*Precios en Guaraníes. No incluyen IVA. Sujeto a revisión de plataforma actual y volúmenes de miembros.*
+*Precios en Guaraníes. No incluyen IVA. Sujeto a plataforma actual y volúmenes de miembros.*

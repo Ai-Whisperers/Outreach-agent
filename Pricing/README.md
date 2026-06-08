@@ -24,8 +24,8 @@ Pricing/
 
 | Market | Currency | Approach |
 |--------|----------|----------|
-| **Europe** | EUR (€) | Value-based AI consulting. Priced for business transformation impact. Competes with NL agencies (€1.5K–75K). |
-| **Paraguay** | Gs. | Local-market pricing. Accessible for PY SMBs. Pilots from Gs. 5M (~$650). |
+| **Europe** | EUR (€) | Value-based AI consulting. Project fees + optional retainer. Competes with NL agencies (€1.5K–75K). |
+| **Paraguay** | Gs. | Monthly subscription model. Entry-level website Gs. 150K/mes. Setup fees for implementation. |
 
 ## Conventions
 

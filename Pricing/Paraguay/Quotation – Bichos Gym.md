@@ -1,43 +1,54 @@
 # Propuesta — Automatización para Gimnasios
 **Bichos Gym**
 
-*Precios en Guaraníes adaptados al mercado paraguayo.*
+*Precios mensuales en Guaraníes. Setup único por plan.*
 
 ---
 
-## Opción A: Piloto — Renovaciones & Seguimiento
+## Plan Básico — Presencia Digital
 
-**Gs. 6.000.000** — precio fijo
+**Gs. 150.000/mes**
+
+- Página web profesional (landing page)
+- Hosting y dominio incluido
+- Diseño adaptable a celulares
+- Formulario de contacto
+- Soporte por email
+
+*Setup único: Gs. 500.000*
+
+---
+
+## Plan Profesional — Site + Automatización (Recomendado)
+
+**Gs. 450.000/mes**
+
+Todo lo del Plan Básico más:
 
 - Recordatorio automático de renovaciones vía WhatsApp
-- Seguimiento de leads (walk-ins, Instagram, referidos → WhatsApp)
+- Seguimiento de leads (Instagram, web, referidos → WhatsApp)
+- Chatbot informativo para miembros (horarios, precios, reglas)
 - Dashboard simple con estado de membresías
-- 30 días de piloto con métricas de retención
-- Capacitación al equipo (1 hora)
-- 2 semanas de soporte post-piloto
+- Soporte prioritario
+
+*Setup único: Gs. 1.500.000*
 
 ---
 
-## Opción B: Automatización Completa del Gimnasio (Recomendado)
+## Plan Premium — Gestión Completa
 
-**Gs. 15.000.000** — precio fijo
+**Gs. 1.000.000/mes**
 
-Incluye Opción A más:
+Todo lo del Plan Profesional más:
 
 - Gestión de horarios y clases (agenda, recordatorios, no-shows)
-- Comunicación automática de cambios de horario vía WhatsApp
-- FAQ automático para miembros (horarios, precios, reglas)
+- Comunicación automática de cambios de horario
+- Notificaciones de pagos y renovaciones
 - Informe semanal de retención y métricas
-- 60 días de soporte
+- Soporte 24h hábiles
+
+*Setup único: Gs. 3.000.000*
 
 ---
 
-## Opción C: Retainer Mensual
-
-**Gs. 3.000.000/mes**
-
-Mantenimiento continuo + 1 nueva automatización por trimestre
-
----
-
-*Precios en Guaraníes. No incluyen IVA. Piloto sujeto a revisión de integraciones disponibles y plataforma actual.*
+*Precios en Guaraníes. No incluyen IVA. Planes sujetos a revisión de integraciones disponibles.*

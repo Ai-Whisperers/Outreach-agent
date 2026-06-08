@@ -1,47 +1,54 @@
 # Propuesta — Automatización Comercial para Construcción
 **Pitchy Glass (Paraguay)**
 
-*Precios en Guaraníes adaptados al mercado paraguayo.*
+*Precios mensuales en Guaraníes. Setup único por plan.*
 
 ---
 
-## Opción A: Taller de Diagnóstico
+## Plan Básico — Presencia Digital
 
-**Gs. 5.000.000** — one-time
+**Gs. 150.000/mes**
 
-- Taller remoto de medio día: mapeo de procesos comerciales
-- Análisis de cotizaciones, especificaciones y flujo de seguimiento
-- Identificación de oportunidades de automatización
-- Documento con hoja de ruta y presupuesto del piloto
-- Entrega: 5 días hábiles
+- Página web profesional corporativa
+- Hosting y dominio incluido
+- Catálogo de productos en línea
+- Formulario de cotización
+- Soporte por email
+
+*Setup único: Gs. 500.000*
 
 ---
 
-## Opción B: Piloto — Copiloto de Ventas Interno (Recomendado)
+## Plan Profesional — Site + Copiloto de Ventas (Recomendado)
 
-**Gs. 18.000.000** — precio fijo
+**Gs. 650.000/mes**
 
-Incluye Opción A más:
+Todo lo del Plan Básico más:
 
-- Asistente de cotizaciones (consulta rápida de catálogo, precios, especificaciones técnicas)
+- Asistente de cotizaciones (consulta rápida de catálogo, precios, especificaciones)
 - Automatización de seguimiento post-visita (resumen → CRM → recordatorio)
-- Alertas de inventario y plazos de entrega para el equipo comercial
-- Humano en el circuito para aprobación de precios
-- 45 días de piloto con métricas
+- Alertas de inventario y plazos de entrega
+- Portal interno para el equipo comercial
+- Soporte prioritario
+
+*Setup único: Gs. 2.500.000*
 
 ---
 
-## Opción C: Automatización Comercial Completa
+## Plan Premium — Automatización Comercial Completa
 
-**Gs. 32.000.000** — precio fijo
+**Gs. 1.800.000/mes**
 
-Incluye Opción B más:
+Todo lo del Plan Profesional más:
 
-- Portal de consulta para clientes (estado de pedidos, especificaciones técnicas)
+- Portal de consulta para clientes (estado de pedidos, especificaciones)
 - Dashboard de fuerza de ventas (cotizaciones, conversiones, tiempos)
 - Automatización de marketing para constructores y arquitectos
-- 90 días de soporte e iteración
+- Reportes automáticos de rendimiento
+- Soporte 24h hábiles
+
+*Setup único: Gs. 5.000.000*
 
 ---
 
-*Precios en Guaraníes. No incluyen IVA. Sujeto a revisión de datos de catálogo y reglas de precios.*
+*Precios en Guaraníes. No incluyen IVA. Sujeto a datos de catálogo y reglas de precios.*

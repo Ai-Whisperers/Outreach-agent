@@ -1,52 +1,53 @@
 # Proposal — AI Operations Consulting
 **Wesley van de Camp**
 
-*AI consulting engagement — process transformation through practical AI agents.*
+*Monthly plans. Start small, scale with results.*
 
 ---
 
-## Option A: Operations Discovery
+## Plan Starter — Ops Scan & Digital Foundation
 
-**€1,500** — one-time
+**€500/month**
 
-- Half-day operational process audit (remote)
-- Current tooling & workflow map
-- Bottleneck identification (volume, latency, error rate)
-- Prioritised automation opportunities with ROI estimates
-- Written advisory report
-- Delivery: 5 business days
+- Operational process scan & bottleneck identification
+- Professional landing page / website
+- Hosting & domain included
+- Written advisory report with quick-win recommendations
+- Email support
+
+*Setup: €400 one-time*
 
 ---
 
-## Option B: Single-Workflow Pilot
+## Plan Growth — Single-Workflow Pilot
 
-**€7,500** — fixed price
+**€1,500/month**
 
-Includes the Operations Discovery, then:
+Everything in Starter, plus:
 
 - One operational workflow fully designed, built, and deployed
-- Human-in-the-loop quality gate for decision-critical steps
-- 45-day pilot with agreed success metrics (hours saved, error reduction, throughput)
+- Human-in-the-loop quality gate
+- 30-day pilot with measurable success metrics
 - Team training session
-- Handover documentation
-- 3 weeks post-pilot support
+- Monthly performance review
 
-*Pilot scope determined during Discovery — targets the workflow with highest measurable impact.*
+*Setup: €1,500 one-time*
 
 ---
 
-## Option C: Ongoing AI Operations Retainer
+## Plan Pro — Multi-Workflow & Ongoing Ops
 
-**€3,500/month** — monthly
+**€3,500/month**
 
-- Maintenance & iteration of deployed agents
+Everything in Growth, plus:
+
 - Additional workflow automation (one per quarter)
-- Monthly performance & impact review
+- Maintenance & iteration of deployed agents
 - Priority support: 48h response SLA
 - Quarterly strategy session to identify new opportunities
 
-*Best for: organisations that want continuous operational improvement without hiring internally.*
+*No setup fee — continuous evolution included.*
 
 ---
 
-*All prices exclude VAT. Pilot SOW confirmed after Operations Discovery is complete.*
+*All prices exclude VAT. Pilot scope confirmed during onboarding.*

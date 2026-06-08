@@ -1,42 +1,54 @@
 # Propuesta — Automatización para Salones de Belleza
 **Magnolia Peluquería**
 
-*Precios en Guaraníes adaptados al mercado paraguayo.*
+*Precios mensuales en Guaraníes. Setup único por plan.*
 
 ---
 
-## Opción A: Piloto — Reservas & Recordatorios
+## Plan Básico — Presencia Digital
 
-**Gs. 5.000.000** — precio fijo
+**Gs. 150.000/mes**
+
+- Página web profesional (landing page)
+- Hosting y dominio incluido
+- Diseño adaptable a celulares
+- Galería de trabajos
+- Soporte por email
+
+*Setup único: Gs. 500.000*
+
+---
+
+## Plan Profesional — Site + Reservas (Recomendado)
+
+**Gs. 400.000/mes**
+
+Todo lo del Plan Básico más:
 
 - Sistema de reservas automáticas vía WhatsApp
 - Recordatorios de citas (24h y 2h antes)
 - Gestión de no-shows con re-agendamiento automático
-- 30 días de piloto
-- Capacitación al personal (1 hora)
+- Notificaciones de promociones a clientes frecuentes
+- Soporte prioritario
+
+*Setup único: Gs. 1.200.000*
 
 ---
 
-## Opción B: Gestión Completa del Salón (Recomendado)
+## Plan Premium — Gestión Completa del Salón
 
-**Gs. 12.000.000** — precio fijo
+**Gs. 800.000/mes**
 
-Incluye Opción A más:
+Todo lo del Plan Profesional más:
 
 - Automatización de seguimiento post-visita (encuesta + reseña)
-- Notificaciones de promociones y paquetes a clientes frecuentes
 - Dashboard de ocupación (staff, horarios, ingresos)
-- Asistente de contenido para redes sociales (posts, promociones)
-- 60 días de soporte
+- Asistente de contenido para redes sociales
+- Campañas automatizadas de marketing
+- Soporte 24h hábiles
+
+*Setup único: Gs. 2.500.000*
 
 ---
 
-## Opción C: Retainer Mensual
-
-**Gs. 2.500.000/mes**
-
-Mantenimiento continuo + 1 campaña automatizada por mes + soporte prioritario
-
----
-
-*Precios en Guaraníes. No incluyen IVA. Sujeto a revisión de plataforma de reservas actual y políticas de datos de clientes.*
+*Precios en Guaraníes. No incluyen IVA. Sujeto a plataforma de reservas actual y políticas de datos.*

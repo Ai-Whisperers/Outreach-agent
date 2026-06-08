@@ -1,43 +1,54 @@
 # Propuesta — Automatización para Spas & Bienestar
 **Mantra Spa**
 
-*Precios en Guaraníes adaptados al mercado paraguayo.*
+*Precios mensuales en Guaraníes. Setup único por plan.*
 
 ---
 
-## Opción A: Piloto — Seguimiento Post-Visita
+## Plan Básico — Presencia Digital
 
-**Gs. 5.000.000** — precio fijo
+**Gs. 150.000/mes**
 
-- Mensaje automático post-visita vía WhatsApp (agradecimiento + reseña)
-- Recordatorio de re-agendamiento según frecuencia recomendada
-- Ofertas personalizadas para visitantes recurrentes
-- 30 días de piloto
-- Capacitación al equipo
-- 2 semanas de soporte
+- Página web profesional (landing page)
+- Hosting y dominio incluido
+- Diseño adaptable a celulares
+- Galería de servicios e instalaciones
+- Soporte por email
+
+*Setup único: Gs. 500.000*
 
 ---
 
-## Opción B: Gestión Completa del Spa (Recomendado)
+## Plan Profesional — Site + Seguimiento de Clientes (Recomendado)
 
-**Gs. 13.000.000** — precio fijo
+**Gs. 400.000/mes**
 
-Incluye Opción A más:
+Todo lo del Plan Básico más:
 
-- Sistema de reservas y disponibilidad con confirmación automática
-- Notificaciones de paquetes y membresías (renovaciones, upsells)
+- Mensaje automático post-visita vía WhatsApp
+- Recordatorio de re-agendamiento personalizado
+- Ofertas automáticas para visitantes recurrentes
+- Sistema de reservas con confirmación automática
+- Soporte prioritario
+
+*Setup único: Gs. 1.200.000*
+
+---
+
+## Plan Premium — Gestión Completa del Spa
+
+**Gs. 900.000/mes**
+
+Todo lo del Plan Profesional más:
+
 - Dashboard de ocupación (salas, terapeutas, ingresos)
+- Notificaciones de paquetes y membresías (renovaciones, upsells)
 - Encuestas de satisfacción automatizadas
-- 60 días de soporte
+- Campañas de marketing automatizadas
+- Soporte 24h hábiles
+
+*Setup único: Gs. 2.500.000*
 
 ---
 
-## Opción C: Retainer Mensual
-
-**Gs. 3.000.000/mes**
-
-Mantenimiento + 1 nueva automatización por trimestre + soporte prioritario
-
----
-
-*Precios en Guaraníes. No incluyen IVA. Sujeto a revisión de plataforma actual y políticas de datos de clientes.*
+*Precios en Guaraníes. No incluyen IVA. Sujeto a plataforma actual y políticas de datos de clientes.*

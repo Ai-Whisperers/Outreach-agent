@@ -11,57 +11,56 @@
 
 ---
 
-## Europe — rate bands & lead overview
+## Europe — monthly plan tiers & lead overview
 
-**Pricing logic:** AI consulting rates reflecting senior expertise, business process transformation, and measurable ROI. Competes with NL agencies (€1.5K–75K+).
+**Pricing logic:** Monthly subscription model. Entry-level from €500–700/month. Scales with automation depth and business impact.
 
-| Service | Band |
-|---------|------|
-| Discovery & Strategy Roadmap | €1,500–2,500 |
-| Single-workflow Pilot | €7,500–12,500 |
-| Multi-phase Transformation | €12,500–42,000 |
-| Ongoing Retainer | €3,500/mo |
+| Plan | Mark (multi-unit) | Wesley (operations) |
+|------|-------------------|---------------------|
+| **Starter** — audit + site | €700/mo (setup €500) | €500/mo (setup €400) |
+| **Growth** — automation pilot | €2,500/mo (setup €2.5K) | €1,500/mo (setup €1.5K) |
+| **Pro** — multi-workflow | €5,500/mo (setup €4.5K) | €3,500/mo (no setup) |
+| **Enterprise** — full transformation | Custom | — |
 
-| Lead | Deal shape | Est. range | Priority |
-|------|-----------|------------|----------|
-| **Mark** — De Vastgoedbegeleider | Roadmap → Phase 1 (€12.5K) → Phase 2 (€18.5K) → Full (€42K) | €2.5K–42K | **High** |
-| **Wesley van de Camp** | Discovery (€1.5K) → Pilot (€7.5K) → Retainer (€3.5K/mo) | €1.5K–7.5K | **High** |
+| Lead | Segment | Planes | Rango mensual | Setup único | Priority |
+|------|---------|--------|---------------|-------------|----------|
+| **Mark** — De Vastgoedbegeleider | Coaching / real estate | Starter → Growth → Pro → Enterprise | €700–5.500/mes | €500–4.500 | **High** |
+| **Wesley van de Camp** | Operations | Starter → Growth → Pro | €500–3.500/mes | €400–1.500 | **High** |
 
 ---
 
-## Paraguay — rate bands & lead overview
+## Paraguay — monthly plan tiers & lead overview
 
-**Pricing logic:** Local-market pricing in Guaraníes. Pilots accessible for PY SMBs (Gs. 5M–18M / ~$650–2,400). Retainers at a fraction of local salary cost.
+**Pricing logic:** Monthly subscription model. Entry-level website desde Gs. 150.000/mes. Tiers scale up con automatización. Setup único separado.
 
-| Service | Band (Gs.) | Band (~USD) |
-|---------|-----------|-------------|
-| Discovery / Taller | 5,000,000 | ~$650 |
-| Single-workflow Pilot | 5,000,000–10,000,000 | ~$650–1,300 |
-| Full Solution | 12,000,000–32,000,000 | ~$1,600–4,200 |
-| Monthly Retainer | 2,500,000–3,500,000/mes | ~$330–460/mo |
+| Plan | Pequeños negocios (gym, salón, spa) | B2B (cerveza, construcción) |
+|------|-------------------------------------|------------------------------|
+| **Básico** — sitio web | Gs. 150.000/mes (setup Gs. 500K) | Gs. 150.000/mes (setup Gs. 500K) |
+| **Profesional** — site + automation | Gs. 400–450.000/mes (setup Gs. 1.2–1.5M) | Gs. 650.000/mes (setup Gs. 2.5M) |
+| **Premium** — full solution | Gs. 800–1.000.000/mes (setup Gs. 2.5–3M) | Gs. 1.800.000/mes (setup Gs. 5M) |
 
-| Lead | Segment | Deal shape | Est. range (Gs.) | Priority |
-|------|---------|-----------|-------------------|----------|
-| **Bichos Gym** | Fitness | Pilot (Gs. 6M) → Full (Gs. 15M) → Retainer | 6M–15M | Medium |
-| **Cocodrilo Fitness** | Fitness | Pilot (Gs. 7M) → Full (Gs. 16M) → Retainer | 7M–16M | Medium |
-| **Magnolia Peluquería** | Belleza | Pilot (Gs. 5M) → Full (Gs. 12M) → Retainer | 5M–12M | Medium |
-| **Mantra Spa** | Bienestar | Pilot (Gs. 5M) → Full (Gs. 13M) → Retainer | 5M–13M | Medium |
-| **Cerveza Trentina** | B2B bebidas | Diag. (Gs. 5M) → Pilot (Gs. 18M) → Full (Gs. 30M) | 5M–30M | Medium |
-| **Pitchy Glass** | Construcción | Taller (Gs. 5M) → Pilot (Gs. 18M) → Full (Gs. 32M) | 5M–32M | Low–Med |
+| Lead | Segment | Planes | Rango mensual (Gs.) | Setup único | Priority |
+|------|---------|--------|---------------------|-------------|----------|
+| **Bichos Gym** | Fitness | Básico → Profesional → Premium | 150K–1.000.000/mes | 500K–3M | Medium |
+| **Cocodrilo Fitness** | Fitness | Básico → Profesional → Premium | 150K–1.000.000/mes | 500K–3M | Medium |
+| **Magnolia Peluquería** | Belleza | Básico → Profesional → Premium | 150K–800.000/mes | 500K–2,5M | Medium |
+| **Mantra Spa** | Bienestar | Básico → Profesional → Premium | 150K–900.000/mes | 500K–2,5M | Medium |
+| **Cerveza Trentina** | B2B bebidas | Básico → Profesional → Premium | 150K–1.800.000/mes | 500K–5M | Medium |
+| **Pitchy Glass** | Construcción | Básico → Profesional → Premium | 150K–1.800.000/mes | 500K–5M | Low–Med |
 
 ---
 
 ## Cross-market comparison
 
-| Workload | Europe (EUR) | Paraguay (Gs.) | Paraguay (~USD) |
-|----------|-------------|----------------|-----------------|
-| Discovery workshop | €1,500–2,500 | Gs. 5,000,000 | ~$650 |
-| Single-workflow build | €7,500–12,500 | Gs. 5,000,000–10,000,000 | ~$650–1,300 |
-| Full multi-workflow | €12,500–42,000 | Gs. 12,000,000–32,000,000 | ~$1,600–4,200 |
-| Monthly retainer | €3,500/mo | Gs. 2,500,000–3,500,000/mes | ~$330–460/mo |
+| Plan tier | Europe (EUR/mes) | Paraguay (Gs./mes) | Paraguay (~USD/mes) |
+|-----------|-----------------|-------------------|---------------------|
+| **Starter / Básico** | €500–700/mes | Gs. 150.000/mes | ~$20/mes |
+| **Growth / Profesional** | €1.500–2.500/mes | Gs. 400–650.000/mes | ~$55–87/mes |
+| **Pro / Premium** | €3.500–5.500/mes | Gs. 800–1.800.000/mes | ~$107–240/mes |
+| **Enterprise** | Custom | — | — |
 
 ## Packaging guidelines
 
-- **Europe:** Always open with Discovery Roadmap — these clients buy strategy before execution
-- **Paraguay:** Offer direct pilot or "Opción A" — SMBs prefer fixed-scope, fixed-price with quick results
-- **Retainers** only offered after pilot success metrics are met (both markets)
+- **Both markets:** Monthly subscription model. Low entry barrier (€500–700 EU / Gs. 150K PY). Upsell through tier upgrades. Setup fee covers implementation and onboarding.
+- **Europe:** Higher tiers (Pro/Enterprise) include dedicated AI consulting — strategy, architecture, and business transformation.
+- **Paraguay:** Focus on practical automation — WhatsApp-first, Spanish-native, accessible pricing.
